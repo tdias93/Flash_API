@@ -31,7 +31,7 @@ def ProcessaArquivo(dirProvisorio, extArquivo, integracao, cnpjCliente, numeroNf
      
     # Carrega informações de configuração
     host = Configuracao.dir_host          # Retorna o host
-    raiz = Configuracao.dir_raiz          # Retorna o dir raiz
+    raiz = Configuracao.dir_processado    # Retorna o dir raiz
        
     Log(event = 'PROCESSANDO ARQUIVO', eventLog = 'INICIANDO CONVERSAO DE IMAGEM PARA JPG', terminal = False)  # Gera Log de Execução
     Log(event = 'PROCESSANDO ARQUIVO', eventLog = f'Arquivo: {dirProvisorio}', terminal = False)               # Gera Log de Execução
